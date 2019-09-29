@@ -180,123 +180,96 @@ for i in range(m,-1,-1):
           0 : 1
           0 : 0
 ```
-## 程式17.5 使用continue跳過5不印222222222222
+## 程式17.5 使用1~10跳過5不印
 ```
-i=1
-while (i<10):
-      if (i ==5):
-        i+=1
-        continue
-      print(i, end=' ')
-      i+=1
-print("End")
-  
-  答案:
-        1 2 3 4 6 7 8 9 End
-```
-## 觀念驗證16.4  刪除if後的i+=1
-```
-i=1
-while (i<10):
-      if (i ==5):
-        continue
-      print(i, end=' ')
-      i+=1
-print("End")
-  
-  答案:   會卡在4後無法執行，因為i一直等於5
-          1 2 3 4 
-```
-## 程式16.5 輸入通關密語
-```
-s=""
-while s != "喵喵":
-      if (s != ""):
-        print("不對喔!")
-      s= input("請輸入通關密語:")
-      if s== "out":
-        break
-else:
-      print("恭喜你過關了")
-print("再見!")
-  
-  答案:
-          請輸入通關密語:2
-          不對喔!
-          請輸入通關密語:喵喵
-          恭喜你過關了
-          再見!
-  另一種答案:
-          請輸入通關密語:z
-          不對喔!
-          請輸入通關密語:out
-          再見!
-```
-## Ch16習題1 修改程式
-```
-num=8
-guess= int(input("猜一個數字: "))
-while guess != num:
-      guess= input("再猜: ")
-print("猜中")
-
-執行結果:
-        猜一個數字: 5
-        再猜: 8
-        再猜: 1
-        再猜: 
-
-  
-  答案:   修改處為:  guess= input("再猜: ")=guess= int(input("再猜: "))
-          因為再次輸入時為字串並不是數字因此無法跳出迴圈
-          num=8
-          guess= int(input("猜一個數字: "))
-          while guess != num:
-                guess= int(input("再猜: "))
-          print("猜中")
-  執行結果:
-          猜一個數字: 1
-          再猜: 5
-          再猜: 8
-          猜中
-```
-## Ch16習題2 寫猜數字遊戲
-```
-lucky_num=5
-start= input("是否進行遊戲(y=yes,n=no): ")
-while start == "y":
-    guess= int(input("猜一個數字(1-10): "))
-    while guess != lucky_num:
-      if guess >= 11:
-        print("超過範圍")
-      guess= int(input("再猜: "))
-    print("你猜中了")
-    start= input("是否進行遊戲(y=yes,n=no): ")
+for i in range(1,20):
+  if i==5:
     continue
-if start == "n":
-    print("退出遊戲")
-else:
-    print("輸入錯誤")
+  print(i,end=" " )
+  if i==10:
+    break
+print("END")
+  
+  答案:
+       1 2 3 4 6 7 8 9 10 END
+```
+## 觀念驗證17.6  指定範圍內所有質數
+```
+num= int(input("請指定範圍（0〜N）: "))
+for i in range(2, num+1):
+  for j in range(2, i):
+    if(i%j == 0):
+      break
+  else:
+      print(i)
+  
+  答案:   請指定範圍（0〜N）: 11
+                    2
+                    3
+                    5
+                    7
+                    11
+```
+## Ch17習題1 1~100 列印3的倍數 並顯示共有幾個數
+```
+a=0
+for i in range(3, 100,3):
+      a+=1    
+      print(i)
+print("3的倍數總共有:",a,"個")
+  
+   答案:  3
+          6
+          9
+          12
+          15
+          18
+          21
+          24
+          27
+          30
+          33
+          36
+          39
+          42
+          45
+          48
+          51
+          54
+          57
+          60
+          63
+          66
+          69
+          72
+          75
+          78
+          81
+          84
+          87
+          90
+          93
+          96
+          99
+          3的倍數總共有: 33 個
+```
+## Ch17習題2 寫出可產生任意層數三角形
+```
+s= int(input("請指定三角形層數: "))
+for i in range(s):
+  for j in range(s - i - 1): 
+           print(" ", end = "")
+  for k in range(i + 1):                
+          print("* ", end = "" )
+  print()    
 
   
-  答案1:  是否進行遊戲(y=yes,n=no): n
-          退出遊戲
-  答案2:
-         是否進行遊戲(y=yes,n=no): q
-         輸入錯誤
-  答案3:
-        是否進行遊戲(y=yes,n=no): y
-        猜一個數字(1-10): 12
-        超過範圍
-        再猜: 3
-        再猜: 5
-        你猜中了
-        是否進行遊戲(y=yes,n=no): y
-        猜一個數字(1-10): 12
-        超過範圍
-        再猜: 3
-        再猜: 5
-        你猜中了
-        是否進行遊戲(y=yes,n=no): n
-        退出遊戲
+  答案1:  請指定三角形層數: 7
+              * 
+             * * 
+            * * * 
+           * * * * 
+          * * * * * 
+         * * * * * * 
+        * * * * * * * 
 ```
