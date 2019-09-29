@@ -230,3 +230,35 @@ print("猜中")
           再猜: 8
           猜中
 ```
+## Ch16習題2 寫猜數字遊戲
+```
+lucky_num=5
+start= input("是否進行遊戲(y=yes,n=no): ")
+if start == "y":
+    guess= int(input("猜一個數字(1-10): "))
+    while guess != lucky_num:
+      if guess >= 11:
+        print("超過範圍")
+      guess= int(input("再猜: "))
+    print("你猜中了")
+    
+elif start == "n":
+   print("退出遊戲")
+else:
+  print("輸入錯誤")
+
+  
+  答案1:  是否進行遊戲(y=yes,n=no): n
+          退出遊戲
+  答案2:
+         是否進行遊戲(y=yes,n=no): q
+         輸入錯誤
+  答案3:
+         是否進行遊戲(y=yes,n=no): y
+         猜一個數字(1-10): 12
+         超過範圍
+         再猜: 6
+         再猜: 4
+         再猜: 5
+         你猜中了
+```
