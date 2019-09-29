@@ -88,3 +88,92 @@ print("你猜中了")
         再猜: 77
         你猜中了
 ```
+## 程式16.3 使用break跳離迴圈(猜字5次自動跳出迴圈)
+```
+secret="code"
+max_tries=5
+guess= input("猜词: ")
+tries=1
+while guess != secret:
+      print("您猜測第",tries,"次")
+      if tries == max_tries:
+        print("沒有機會了。")
+        break
+      guess= input("再猜:  ")
+      tries+=1
+if tries <= max_tries and guess == secret:
+      print("你猜中了")
+  
+  答案:      猜词: 嗨
+            您猜測第 1 次
+            再猜:  好
+            您猜測第 2 次
+            再猜:  a
+            您猜測第 3 次
+            再猜:  s
+            您猜測第 4 次
+            再猜:  e
+            您猜測第 5 次
+            您沒有嘗試。
+```
+## 觀念驗證16.3  不限次數猜單字
+```
+secret="code"
+max_tries="EXIT"
+guess= input("猜词: ")
+tries=1
+while guess != secret:
+      print("您猜測第",tries,"次")
+      if guess == max_tries:
+        print("結束")
+        break
+      guess= input("再猜:  ")
+      tries+=1
+if guess != max_tries and guess == secret:
+      print("你猜中了")
+  
+  答案:
+          猜词: a
+          您猜測第 1 次
+          再猜:  s
+          您猜測第 2 次
+          再猜:  EXIT
+          您猜測第 3 次
+          結束
+  另一種答案:
+          猜词: a
+          您猜測第 1 次
+          再猜:  s
+          您猜測第 2 次
+          再猜:  d
+          您猜測第 3 次
+          再猜:  code
+          你猜中了
+```
+## 程式16.4 使用continue跳過5不印
+```
+i=1
+while (i<10):
+      if (i ==5):
+        i+=1
+        continue
+      print(i, end=' ')
+      i+=1
+print("End")
+  
+  答案:
+        1 2 3 4 6 7 8 9 End
+```
+## 觀念驗證16.4  刪除if後的i+=1
+```
+i=1
+while (i<10):
+      if (i ==5):
+        continue
+      print(i, end=' ')
+      i+=1
+print("End")
+  
+  答案:   會卡在4後無法執行，因為i一直等於5
+          1 2 3 4 
+```
