@@ -99,28 +99,52 @@ for e in winners:
 ```
 ## 觀念驗證18.2 將分開的姓和名用for迴圈走訪二層的tuple 全名列印出來
 ```
-for i in range(1,20):
-  if i==5:
-    continue
-  print(i,end=" " )
-  if i==10:
-    break
-print("END")
+Name=(("張","天才"),("王","子帥"),("陳","美美"))
+for e in Name:
+  print(e[0] + e[1]) 
   
   答案:
-      
+        張天才
+        王子帥
+        陳美美
 ```
-## 觀念驗證17.6  指定範圍內所有質數
+## 程式18.6  多變數走訪二層的tuple
 ```
-num= int(input("請指定範圍（0〜N）: "))
-for i in range(2, num+1):
-  for j in range(2, i):
-    if(i%j == 0):
-      break
-  else:
-      print(i)
+winners=(("頭獎","Peter"),("二獎","Mark"),("三獎","Joy"))
+print("恭喜以下得獎者:")
+for prize , winner in winners:
+  print(prize+ ":" + winner)
   
   答案:   
+        恭喜以下得獎者:
+          頭獎:Peter
+          二獎:Mark
+          三獎:Joy
+```
+## 觀念驗證18.3 多變數走訪三層的tuple
+```
+students=(('22',('張','天才')),('23',('王','子帥')),('24',('陳','美美')))
+for (Seat, (lastname, firstname)) in students:
+    print(Seat+ "號" + " - " + lastname+ firstname)
+      
+  答案:   
+        22號 - 張天才
+        23號 - 王子帥
+        24號 - 陳美美
+```
+
+
+
+## 觀念驗證18.3 多變數走訪三層的tuple
+```
+students=(('22',('張','天才')),('23',('王','子帥')),('24',('陳','美美')))
+for (Seat, (lastname, firstname)) in students:
+    print(Seat+ "號" + " - " + lastname+ firstname)
+      
+  答案:   
+        22號 - 張天才
+        23號 - 王子帥
+        24號 - 陳美美
 ```
 ## Ch17習題1 1~100 列印3的倍數 並顯示共有幾個數
 ```
