@@ -20,6 +20,7 @@ for ch in "Python is fun!":
           the character is u
           the character is n
           the character is !
+```
 ## 觀念驗證18.1  任意輸入字串，用for將(a,e,i,o,u)列印出來
 ```
 string= input("輸入字串: ")
