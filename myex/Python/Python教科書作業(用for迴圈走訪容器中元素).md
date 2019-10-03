@@ -132,10 +132,17 @@ for (Seat, (lastname, firstname)) in students:
         23號 - 王子帥
         24號 - 陳美美
 ```
-
-
-
-## 觀念驗證18.3 多變數走訪三層的tuple
+## 程式18.7 for 迴圈 vs. while 迴圈
+```
+for x in range(3):
+    print("var x is",x)
+      
+  答案:   
+        var x is 0
+        var x is 1
+        var x is 2
+```
+## 觀念驗證18.4  下列 while 迴圈改成for迴圈
 ```
 students=(('22',('張','天才')),('23',('王','子帥')),('24',('陳','美美')))
 for (Seat, (lastname, firstname)) in students:
