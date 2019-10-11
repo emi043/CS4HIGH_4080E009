@@ -141,19 +141,42 @@ for x in range(3):
         var x is 0
         var x is 1
         var x is 2
+x=0
+while x<3:
+    print("var x is",x)
+    x+=1
+      
+  答案:   
+        var x is 0
+        var x is 1
+        var x is 2
 ```
 ## 觀念驗證18.4  下列 while 迴圈改成for迴圈
 ```
-students=(('22',('張','天才')),('23',('王','子帥')),('24',('陳','美美')))
-for (Seat, (lastname, firstname)) in students:
-    print(Seat+ "號" + " - " + lastname+ firstname)
+password = "robot fort flower graph"
+space_count = 0
+i=0
+while i < len(password):
+  if password[i] == " ":
+      space_count +=1
+  i+=1
+print(space_count)
       
   答案:   
-        22號 - 張天才
-        23號 - 王子帥
-        24號 - 陳美美
+        3
+        
+password = "robot fort flower graph"
+space_count = 0
+len_s=len(password)
+for i in range(len_s):
+  if password[i] == " ":
+      space_count +=1
+print(space_count)
+答案:   
+        3
+        
 ```
-## Ch17習題1 1~100 列印3的倍數 並顯示共有幾個數
+## Ch18習題1 輸入名字程式針對名字加Hi
 ```
 a=0
 for i in range(3, 100,3):
