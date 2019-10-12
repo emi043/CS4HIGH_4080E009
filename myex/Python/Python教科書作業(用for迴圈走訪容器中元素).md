@@ -176,66 +176,51 @@ print(space_count)
         3
         
 ```
-## Ch18習題1 輸入名字程式針對名字加Hi
+## Ch18習題1 輸入多個名字以空白分隔程式針對名字說Hi
 ```
-a=0
-for i in range(3, 100,3):
-      a+=1    
-      print(i)
-print("3的倍數總共有:",a,"個")
+string= input("輸入名字: ")
+for n in string.split():
+  print("Hi "+n)
   
-   答案:  3
-          6
-          9
-          12
-          15
-          18
-          21
-          24
-          27
-          30
-          33
-          36
-          39
-          42
-          45
-          48
-          51
-          54
-          57
-          60
-          63
-          66
-          69
-          72
-          75
-          78
-          81
-          84
-          87
-          90
-          93
-          96
-          99
-          3的倍數總共有: 33 個
+   答案: 輸入名字: 張天才 小小 apple Young
+          Hi 張天才
+          Hi 小小
+          Hi apple
+          Hi Young
 ```
-## Ch17習題2 寫出可產生任意層數三角形
+## Ch18習題2 用while迴圈輸入購買清單再用for迴圈把購買清單列出
 ```
-s= int(input("請指定三角形層數: "))
-for i in range(s):
-  for j in range(s - i - 1): 
-           print(" ", end = "")
-  for k in range(i + 1):                
-          print("* ", end = "" )
-  print()    
-
+commoditys=[]
+while True:
+  commodity = input("請輸入要買的商品(沒了 = 結束)：")
+  if (commodity!="沒了"):
+    commoditys.append(commodity)
+  if (commodity=="沒了"):
+      print("以下是您購買的清單:")
+      for n in commoditys:
+        print(n)
+      break
   
-  答案1:  請指定三角形層數: 7
-              * 
-             * * 
-            * * * 
-           * * * * 
-          * * * * * 
-         * * * * * * 
-        * * * * * * * 
+  答案:  請輸入要買的商品(沒了 = 結束)：香蕉
+          請輸入要買的商品(沒了 = 結束)：牛奶
+          請輸入要買的商品(沒了 = 結束)：衛生紙
+          請輸入要買的商品(沒了 = 結束)：牙刷
+          請輸入要買的商品(沒了 = 結束)：沒了
+            以下是您購買的清單:
+            香蕉
+            牛奶
+            衛生紙
+            牙刷
+```
+## Ch18習題3 用多變數走訪的方式把18到22歲的會員列出來
+```
+members=(('Jam',16),('Sam',21),('Mark',17),('Ken',24),('Ben',18))
+print("會員名單:") 
+for Name , age in members:
+  if age>17 and age < 23 :
+     print("會員:", Name , age , "歲")
+  
+  答案:  會員名單:
+         會員: Sam 21 歲
+        會員: Ben 18 歲
 ```
