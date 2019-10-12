@@ -201,7 +201,7 @@ fruits = ["香蕉","蘋果","橘子","鳳梨","西瓜"]
 while True:
     fruit = input("請輸入喜歡的水果(Enter 結束)：")
 
-    if (fruit==""):
+    if (fruit=="Enter"):
         break
 
     n = fruits.count(fruit) 
