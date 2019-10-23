@@ -96,19 +96,26 @@ print(sentence.count('o'))
 底下各行輸出為何?
 x = "Hello"
 x[0]
+答:'H'
 x[5]
+答:string index out of range
 x[-1]
+答:'o'
 x[1:]
+答:'ello'
 x[1:-1]
+答:'ell'
 ```
 ```
 底下輸出為何?
 x = "Goodbye\n"
 x = x[:-1]
 x
+答:'Goodbye'
 ```
 ```
 len("Goodbye")
+答:'Goodbye'
 ```
 ### 基本的字串操作
 ```
