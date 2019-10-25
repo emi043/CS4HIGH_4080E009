@@ -121,21 +121,26 @@ len("Goodbye")
 ```
 x = "Hello " + "Mydeargreatteacher"
 x
+答:'Hello Mydeargreatteacher'
 ```
 ```
 8 * "x"
+答:'xxxxxxxx'
 ```
 ### Unicode轉義字元
 ```
 unicode_a ='\N{LATIN SMALL LETTER A}'
 unicode_a
+答:'a'
 ```
 ```
 unicode_a_with_acute = '\N{LATIN SMALL LETTER A WITH ACUTE}'      
 unicode_a_with_acute
+答:'á'
 ```
 ```
 "\u00E1"
+答:'á'
 ```
 ### 字串處理常用的method(方法)
 ```
@@ -145,6 +150,7 @@ unicode_a_with_acute
 " ".join(["join", "puts", "spaces", "between", "elements"])
 
 "::".join(["Separated", "with", "colons"])
+答:'Separated::with::colons'
 ```
 ```
 # 使用split()切割字串
@@ -162,6 +168,7 @@ x.split(' ', 2)
 
 ['a', 'b', 'c d']
 x.split(' ', 9)
+答:['a', 'b', 'c', 'd']
 ```
 ```
 # 使用strip(()、lstrip()、rstrip()去除多餘空白
@@ -169,15 +176,20 @@ x.split(' ', 9)
 底下程式執行後各行結果為何?
 x = "  Hello,    World\t\t "
 x.strip()
+答:'Hello,    World'
 x.lstrip()
+答:'Hello,    World\t\t '
 x.rstrip()
-
+答:'  Hello,    World'
 
 底下程式執行後各行結果為何?
 x = "www.python.org"
-x.strip("w")  
-x.strip("gor")       
+x.strip("w") 
+答:'.python.org'
+x.strip("gor")
+答:'www.python.'
 x.strip(".gorw")  
+答:'python'
 ```
 ```
 底下程式執行後各行結果為何?
@@ -188,21 +200,30 @@ x.isalpha()
 底下程式執行後各行結果為何?
 x = "M"
 x.islower()
+答:False
 x.isupper()
+答:True
 ```
 ```
 # 使用內建函數:用int() 和float()函示將字串轉換為數字
 
 下列程式執行後結果為何?何者有誤?
 float('123.456')
+答:123.456
 float('xxyy') 
-
+答:could not convert string to float: 'xxyy'
 int('3333')
+答:3333
 int('123.456') 
+答:invalid literal for int() with base 10: '123.456'
 int('10000', 8)             
+答:4096
 int('101', 2)
+答:5
 int('ff', 16)
+答:255
 int('123456', 6)   
+答: invalid literal for int() with base 6: '123456'
 ```
 ### while loop
 ```
@@ -220,4 +241,6 @@ while index < len(names):
 (B)names[1]是 龍 
 (C)程式執行完後,index最後為2
 (D)如果把條件改成 index > len(names),中index最後為2
+答:(B)names[1]是 聖 
+   (D)如果把條件改成 index > len(names),中index最後為0 
 ```
