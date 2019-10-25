@@ -8,8 +8,7 @@ print(z)
 
 答案:
 4.0
-```
-```
+
 底下程式執行後, 其值為何?
 print(3 / 2)
 答案:1.5
@@ -108,9 +107,7 @@ print(sentence.capitalize())
 
 print(sentence.count('o'))
 答:4
-```
 
-```
 底下各行輸出為何?
 x = "Hello"
 x[0]
@@ -127,15 +124,13 @@ x[1:]
 
 x[1:-1]
 答:'ell'
-```
-```
+
 底下輸出為何?
 x = "Goodbye\n"
 x = x[:-1]
 x
 答:'Goodbye'
-```
-```
+
 len("Goodbye")
 答:'Goodbye'
 ```
@@ -144,8 +139,7 @@ len("Goodbye")
 x = "Hello " + "Mydeargreatteacher"
 x
 答:'Hello Mydeargreatteacher'
-```
-```
+
 8 * "x"
 答:'xxxxxxxx'
 ```
@@ -154,13 +148,11 @@ x
 unicode_a ='\N{LATIN SMALL LETTER A}'
 unicode_a
 答:'a'
-```
-```
+
 unicode_a_with_acute = '\N{LATIN SMALL LETTER A WITH ACUTE}'      
 unicode_a_with_acute
 答:'á'
-```
-```
+
 "\u00E1"
 答:'á'
 ```
@@ -173,8 +165,7 @@ unicode_a_with_acute
 
 "::".join(["Separated", "with", "colons"])
 答:'Separated::with::colons'
-```
-```
+
 ```
 ### 使用split()切割字串
 ```
@@ -197,8 +188,7 @@ x.split(' ', 2)
 ['a', 'b', 'c d']
 x.split(' ', 9)
 答:['a', 'b', 'c', 'd']
-```
-```
+
 ```
 # 使用strip(()、lstrip()、rstrip()去除多餘空白
 ```
@@ -223,8 +213,7 @@ x.strip("gor")
 
 x.strip(".gorw")  
 答:'python'
-```
-```
+
 底下程式執行後各行結果為何?
 x = "123"
 x.isdigit()
@@ -240,8 +229,7 @@ x.islower()
 
 x.isupper()
 答:True
-```
-```
+
 ```
 # 使用內建函數:用int() 和float()函示將字串轉換為數字
 ```
