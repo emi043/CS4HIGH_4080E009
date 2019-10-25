@@ -5,30 +5,36 @@ x = 3
 y = 5
 z = (x + y) / 2
 print(z)
-```
-```
+
 答案:
 4.0
 ```
-
 ```
 底下程式執行後, 其值為何?
 print(3 / 2)
 答案:1.5
+
 print(3 // 2)
 答案:1
+
 print(-1 // 2)
 答案:-1
+
 print(51 + 122 - 33*42-(44*3)/5)
 答案:-1239.4
+
 print(3000000000*3.0)
 答案:9000000000.0
+
 print(3000000000*3)
 答案:9000000000
+
 int(200.2)
 答案:200
+
 int(2e2)
 答案:200
+
 float(200)
 答案:200.0
 ```
@@ -37,14 +43,17 @@ float(200)
 ```
 print(3 + 2j - (4 + 4j))
 答案:(-1-2j)
+
 print(1j*1j)
 答案:(-1+0j)
+
 print((1 + 2j) * (3 + 4j))
 答案:(-5+10j)
 
 z = 3+5j
 z.real
 答案:3.0
+
 z = 3+5j
 z.imag
 答案:5.0
@@ -61,33 +70,42 @@ cmath.sqrt(-1)
 1.print("3*2*(17-2)")會印出甚麼結果:
 (A)0   (B)90  (C)出現錯誤,無法印出  (D)3*2*(17-2)
 答:(D)3*2*(17-2)
+
 2.print(3*2*(17-2))會印出甚麼結果:
 (A)0   (B)90  (C)出現錯誤,無法印出  (D)3*2*(17-2)
 答:(B)90
+
 3.print("abc""+""def")會印出甚麼結果:
 (A)出現錯誤,無法印出   (B)abc+def  (C)abc""+""def  (D)abcdef
 答:(B)abc+def
+
 4.print("abc"+"def")會印出甚麼結果:
 (A)出現錯誤,無法印出   (B)abc+def  (C)abc""+""def  (D)abcdef
 答:(D)abcdef
+
 5.底下程式執行後結果為何?
 word = "arttarataaa"
 print(word.replace("a", "z",3))
 (A)出現錯誤,無法印出   (B)arttarataaa  (C)zrttzrztaaa (D)zrttzrztzzz
 答:(C)zrttzrztaaa 
+
 6.底下程式執行後結果為何?
 word = "arttarataaa"
 print(word.replace("a", "z"))
 (A)出現錯誤,無法印出   (B)arttarataaa  (C)zrttzrztaaa (D)zrttzrztzzz
 答:(D)zrttzrztzzz
+
 7.底下各行輸出為何?
 sentence = 'To Be or NOT to Be: that is the question: '
 print(sentence.upper())
 答:TO BE OR NOT TO BE: THAT IS THE QUESTION: 
+
 print(sentence.lower())
 答:to be or not to be: that is the question: 
+
 print(sentence.capitalize())
 答:To be or not to be: that is the question: 
+
 print(sentence.count('o'))
 答:4
 ```
@@ -97,12 +115,16 @@ print(sentence.count('o'))
 x = "Hello"
 x[0]
 答:'H'
+
 x[5]
 答:string index out of range
+
 x[-1]
 答:'o'
+
 x[1:]
 答:'ello'
+
 x[1:-1]
 答:'ell'
 ```
@@ -177,8 +199,10 @@ x.split(' ', 9)
 x = "  Hello,    World\t\t "
 x.strip()
 答:'Hello,    World'
+
 x.lstrip()
 答:'Hello,    World\t\t '
+
 x.rstrip()
 答:'  Hello,    World'
 
@@ -186,8 +210,10 @@ x.rstrip()
 x = "www.python.org"
 x.strip("w") 
 答:'.python.org'
+
 x.strip("gor")
 答:'www.python.'
+
 x.strip(".gorw")  
 答:'python'
 ```
@@ -210,18 +236,25 @@ x.isupper()
 下列程式執行後結果為何?何者有誤?
 float('123.456')
 答:123.456
+
 float('xxyy') 
 答:could not convert string to float: 'xxyy'
+
 int('3333')
 答:3333
+
 int('123.456') 
 答:invalid literal for int() with base 10: '123.456'
+
 int('10000', 8)             
 答:4096
+
 int('101', 2)
 答:5
+
 int('ff', 16)
 答:255
+
 int('123456', 6)   
 答: invalid literal for int() with base 6: '123456'
 ```
