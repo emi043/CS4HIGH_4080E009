@@ -178,15 +178,19 @@ unicode_a_with_acute
 # 使用split()切割字串
 x = "You\t\t can have tabs\t\n \t and newlines \n\n mixed in"
 x.split()
+答:['You', 'can', 'have', 'tabs', 'and', 'newlines', 'mixed', 'in']
 
 x = "Mississippi"
 x.split("ss")
+答:['Mi', 'i', 'ippi']
 
 x = 'a b c d'
 x.split(' ', 1)
+答:['a', 'b c d']
 
 ['a', 'b c d']
 x.split(' ', 2)
+答:['a', 'b', 'c d']
 
 ['a', 'b', 'c d']
 x.split(' ', 9)
@@ -221,12 +225,14 @@ x.strip(".gorw")
 底下程式執行後各行結果為何?
 x = "123"
 x.isdigit()
+答:True
 x.isalpha()
-
+答:False
 底下程式執行後各行結果為何?
 x = "M"
 x.islower()
 答:False
+
 x.isupper()
 答:True
 ```
