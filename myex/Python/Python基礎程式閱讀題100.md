@@ -175,7 +175,9 @@ unicode_a_with_acute
 答:'Separated::with::colons'
 ```
 ```
-# 使用split()切割字串
+```
+### 使用split()切割字串
+```
 x = "You\t\t can have tabs\t\n \t and newlines \n\n mixed in"
 x.split()
 答:['You', 'can', 'have', 'tabs', 'and', 'newlines', 'mixed', 'in']
@@ -197,8 +199,9 @@ x.split(' ', 9)
 答:['a', 'b', 'c', 'd']
 ```
 ```
+```
 # 使用strip(()、lstrip()、rstrip()去除多餘空白
-
+```
 底下程式執行後各行結果為何?
 x = "  Hello,    World\t\t "
 x.strip()
@@ -226,8 +229,10 @@ x.strip(".gorw")
 x = "123"
 x.isdigit()
 答:True
+
 x.isalpha()
 答:False
+
 底下程式執行後各行結果為何?
 x = "M"
 x.islower()
@@ -237,8 +242,9 @@ x.isupper()
 答:True
 ```
 ```
+```
 # 使用內建函數:用int() 和float()函示將字串轉換為數字
-
+```
 下列程式執行後結果為何?何者有誤?
 float('123.456')
 答:123.456
