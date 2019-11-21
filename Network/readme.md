@@ -48,7 +48,7 @@ Internet Control Message Protocol
 ```
 #### ICMP Message Format封包格式:
 
-
+![ICMP 封包格式](icmp_header.gif)
 ```
 ICMP 封包格式，其各欄位功能如下：
 ● 訊息型態（Message Type）：表示該 ICMP 所欲控制之訊息型態，共有 13 種型態，訊息型態之型態代表值如表 5-2 所示。
@@ -62,6 +62,7 @@ ICMP 封包格式，其各欄位功能如下：
 ping 
 tracert| Traceroute
 如何使用 TRACERT 疑難排解 Windows 中的 TCP/IP 問題
+https://support.microsoft.com/zh-tw/help/314868/how-to-use-tracert-to-troubleshoot-tcp-ip-problems-in-windows
 ```
 ```
 tracert www.pchome.com.tw
