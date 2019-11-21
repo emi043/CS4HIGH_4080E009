@@ -324,6 +324,20 @@ tracert www.pchome.com.tw
 ```
 作業:tracert www.ksu.edu.tw
 ```
+```
+在上限 30 個躍點上
+追蹤 www.ksu.edu.tw [120.114.100.65] 的路由:
+
+  1    <1 ms    <1 ms    <1 ms  172.20.155.254
+  2     4 ms     2 ms     2 ms  120-114-50-230.ksu.edu.tw [120.114.50.230]
+  3    <1 ms    <1 ms    <1 ms  chs.www.ksu.edu.tw [120.114.100.65]
+
+追蹤完成。
+```
+### ICMP 常用指令
+
+![ICMP 常用指令](tracert.gif)
+
 # Transport層協定:TCP(可靠的reliable) vs UDP (不可靠的unreliable)
 ```
 何謂(可靠的reliable) vs (不可靠的unreliable)?
