@@ -214,9 +214,9 @@ tracert www.pchome.com.tw
   3    <1 ms    <1 ms    <1 ms  chs.www.ksu.edu.tw [120.114.100.65]
 追蹤完成。
 ```
-### ICMP 封裝
+### ICMP 常用指令
 
-![ICMP 常用指令](tracert www.ksu.edu.tw.gif)
+![ICMP 常用指令](tracert www.ksu.edu.tw.png)
 
 ### TCP vs UDP 
 ```
