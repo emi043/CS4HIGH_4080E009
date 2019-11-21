@@ -324,20 +324,6 @@ tracert www.pchome.com.tw
 ```
 作業:tracert www.ksu.edu.tw
 ```
-```
-在上限 30 個躍點上
-追蹤 www.ksu.edu.tw [120.114.100.65] 的路由:
-
-  1    <1 ms    <1 ms    <1 ms  172.20.155.254
-  2     4 ms     2 ms     2 ms  120-114-50-230.ksu.edu.tw [120.114.50.230]
-  3    <1 ms    <1 ms    <1 ms  chs.www.ksu.edu.tw [120.114.100.65]
-
-追蹤完成。
-```
-### ICMP 常用指令
-
-![ICMP 常用指令](tracert.gif)
-
 # Transport層協定:TCP(可靠的reliable) vs UDP (不可靠的unreliable)
 ```
 何謂(可靠的reliable) vs (不可靠的unreliable)?
@@ -361,7 +347,7 @@ https://en.wikipedia.org/wiki/User_Datagram_Protocol
 ```
 ### UDP Format
 
-
+![UDP header format](udp_header.gif)
 ```
 UDP報頭包括4個欄位，每個欄位占用2個位元組（即16個位元）。
 在IPv4中，「來源連接埠」和「校驗和」是可選欄位（以粉色背景標出）。
@@ -389,7 +375,7 @@ UDP不需要應答，所以來源埠是可選的，如果來源埠不用，那�
 如果不使用校驗和，該欄位應被填充為全0。
 ```
 ## TCP
-![TCP ](tcp_header.gif)
+![TCP header format](tcp_header.gif)
 
 # Application 層常用協定
 ### SSL, TLS, HTTP, HTTPS 
