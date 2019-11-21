@@ -135,6 +135,23 @@ ICMP 封包格式，其各欄位功能如下：
 17 Address Mask Request（位址遮罩要求）
 18 Address Mask Reply（位址遮罩回覆）
 ```
+### Type=3[Destination Unreachable（目的地無法到達）]的 code欄位
+```
+ Code 欄位:註明無法到達目的地的原因：
+● 0: Network Unreachable（無法到達目的網路）
+● 1: Host Unreachable（無法到達目的主機）
+● 2: Protocol Unreachable（通訊協定不存在）
+● 3: Port Unreachable（無法到達連接埠）
+● 4: Fragmentation Needed and DF set（資料需分割並設定不可分割位元）
+● 5: Source Route Failed（來源路徑選擇失敗）
+● 6: Destination Network Unknown（無法識別目的地網路）
+● 7: Destination Host Unknown（無法識別目的地主機）
+● 8: Source Host Isolated（來源主機被隔離）
+● 9: Communication with Destination Network Administratively Prohibited（管理上禁止和目的地網路通訊）
+● 10: Communication with Destination Host Administratively Prohibited（管理上禁止和目的地主機通訊）
+● 11: Network Unreachable for Type of Service（無法到達此型態的網路服務）
+● 12: Host Unreachable for Type of Service（無法到達此型態的主機服務）
+```
 ### ICMP 封裝
 
 ![ICMP 封裝](icmp_encap.gif)
@@ -159,6 +176,34 @@ tracert www.pchome.com.tw
   5     *        *        *     要求等候逾時。
   6     *        *        *     要求等候逾時。
   7     *        *        *     要求等候逾時。
+  8     *        *        *     要求等候逾時。
+  9     *        *        *     要求等候逾時。
+ 10     *        *        *     要求等候逾時。
+ 11     *        *        *     要求等候逾時。
+ 12     *        *        *     要求等候逾時。
+ 13     *        *        *     要求等候逾時。
+ 14     *        *        *     要求等候逾時。
+ 15     *        *        *     要求等候逾時。
+ 16     *        *        *     要求等候逾時。
+ 17     *        *        *     要求等候逾時。
+ 18     *        *        *     要求等候逾時。
+ 19     *        *        *     要求等候逾時。
+ 20     *        *        *     要求等候逾時。
+ 21     *        *        *     要求等候逾時。
+ 22     *        *        *     要求等候逾時。
+ 23     *        *        *     要求等候逾時。
+ 24     *        *        *     要求等候逾時。
+ 25     *        *        *     要求等候逾時。
+ 26     *        *        *     要求等候逾時。
+ 27     *        *        *     要求等候逾時。
+ 28     *        *        *     要求等候逾時。
+ 29     *        *        *     要求等候逾時。
+ 30     *        *        *     要求等候逾時。
+
+追蹤完成。
+```
+```
+作業:tracert www.ksu.edu.tw
 ```
 ### TCP vs UDP 
 ```
